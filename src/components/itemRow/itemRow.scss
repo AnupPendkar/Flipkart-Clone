@@ -1,0 +1,28 @@
+@import "../../App.scss";
+
+.item-row {
+  @include flex($justify: false);
+  padding: 10px 0;
+
+  img {
+    width: 17px;
+    margin-right: 15px;
+  }
+
+  .text {
+    color: $dark-grey-color;
+    font-size: $font-size1 + 1;
+    margin-right: 10px;
+  }
+
+  .new-container {
+    background-color: rgb(250, 52, 52);
+    width: 28px;
+    height: 13px;
+    @include flex;
+
+    .new {
+      font-size: 10px;
+    }
+  }
+}

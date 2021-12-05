@@ -1,0 +1,100 @@
+@import "../../App.scss";
+
+.header {
+  overflow: hidden;
+  position: relative;
+  border: 8px solid rgb(234, 236, 239);
+  z-index: 1;
+
+  .mobile-slider {
+    display: none;
+  }
+
+  .slider {
+    display: flex;
+
+    img {
+      max-width: 100%;
+      min-height: 230px;
+      object-fit: cover;
+      transition: all 0.2s ease;
+    }
+
+    .mobile-slide-btn {
+      display: none;
+    }
+  }
+
+  .click {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    border: none;
+
+    .slider {
+      display: none;
+    }
+    .mobile-slider {
+      overflow: hidden;
+      display: block;
+
+      .wrapper {
+        width: 500%;
+        position: relative;
+        animation: 14s slider infinite;
+
+        @keyframes slider {
+          0% {
+            left: 0;
+          }
+          15% {
+            left: 0;
+          }
+
+          20% {
+            left: -100%;
+          }
+          35% {
+            left: -100%;
+          }
+
+          40% {
+            left: -200%;
+          }
+          55% {
+            left: -200%;
+          }
+
+          60% {
+            left: -300%;
+          }
+          75% {
+            left: -300%;
+          }
+
+          80% {
+            left: -400%;
+          }
+          100% {
+            left: -400%;
+          }
+        }
+
+        img {
+          width: 20%;
+          height: 150px;
+          object-fit: cover;
+          cursor: pointer;
+        }
+      }
+    }
+    .click {
+      display: none;
+    }
+  }
+}

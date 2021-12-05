@@ -1,0 +1,67 @@
+@import "../../App.scss";
+
+.navbar {
+  @include flex($justify: false);
+  background-color: white;
+  @include border-shadow;
+
+  .navbar-mobile-item {
+    display: none;
+  }
+
+  .navbar-desktop {
+    @include flex($justify: false);
+    max-width: 100vw;
+    flex: 1;
+  }
+
+  .navbar-item {
+    flex: 1;
+    @include flex($justify: false);
+    flex-direction: column;
+    cursor: pointer;
+
+    &:hover {
+      .text {
+        color: $primary-color;
+      }
+    }
+
+    img {
+      max-width: 60px;
+    }
+
+    .text {
+      font-size: $navbar--font-size1;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0px 0px;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .more-options,
+    .top-icon {
+      display: none;
+    }
+
+    .navbar-desktop {
+      display: none;
+    }
+    .navbar-mobile-item {
+      @include flex;
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+}

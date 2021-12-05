@@ -1,0 +1,71 @@
+@import "../../App.scss";
+
+.all {
+  .main-navbar,
+  .main-mobile-navbar {
+    display: none;
+  }
+
+  .all-product-navbar {
+    @include flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: $primary-color;
+    max-width: 100%;
+    min-height: 50px;
+    color: white;
+
+    .left {
+      @include flex;
+      gap: 10px;
+
+      img {
+        width: 30px;
+      }
+
+      .icon {
+        cursor: pointer;
+      }
+
+      .text-container {
+        overflow-x: scroll;
+        white-space: nowrap;
+        max-width: 140px;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        .text {
+          text-overflow: clip;
+          font-size: $font-size1 + 2;
+        }
+      }
+    }
+
+    .right {
+      @include flex;
+      gap: 15px;
+
+      * {
+        cursor: pointer;
+      }
+
+      .text {
+        font-size: $font-size1 + 2;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .all {
+    .all-product-navbar,
+    .main-mobile-navbar {
+      display: none;
+    }
+    .main-navbar {
+      display: flex;
+    }
+  }
+}

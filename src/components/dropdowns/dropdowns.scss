@@ -1,0 +1,31 @@
+@import "../../App.scss";
+
+.dropdowns {
+  .row1 {
+    @include flex;
+    justify-content: space-between;
+
+    .text {
+      text-transform: uppercase;
+    }
+
+    .icon.active {
+      transform: rotate(180deg);
+      background-color: white;
+    }
+  }
+
+  .dropdown {
+    z-index: -2;
+    display: none;
+
+    .row {
+      @include flex($justify: false);
+      gap: 10px;
+    }
+  }
+  .active {
+    background-color: white;
+    display: block;
+  }
+}

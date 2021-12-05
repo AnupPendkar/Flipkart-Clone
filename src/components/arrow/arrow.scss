@@ -1,0 +1,50 @@
+@import "../../App.scss";
+
+@mixin border-radius($left: true) {
+  @if $left {
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  } @else {
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.arrow-container {
+  @include flex;
+  width: 40px;
+  height: 90px;
+  background-color: white;
+  @include border-shadow($darkPer: -2px);
+  cursor: pointer;
+}
+
+.active {
+  background-color: $white-color;
+
+  .back {
+    transform: translateX(-1px);
+  }
+
+  .forward {
+    transform: translateX(1px);
+  }
+}
+
+.back {
+  left: 0;
+  @include border-radius($left: false);
+}
+
+.forward {
+  right: 0;
+  @include border-radius;
+}

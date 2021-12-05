@@ -1,0 +1,56 @@
+@import "../../App.scss";
+
+.mobile-product-row {
+  display: none;
+}
+.productRow {
+  @include flex($align: false);
+  margin: 30px 8px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  @include border-shadow($darkPer: -5px);
+  max-width: 100vw;
+
+  .product-container {
+    flex: 75%;
+    overflow: hidden;
+    position: relative;
+    .top-bar {
+      @include flex($justify: false);
+      justify-content: space-between;
+      padding: 13px 30px;
+      border-bottom: 1px solid $border-color;
+
+      .text {
+        font-size: $title--font-size;
+        font-weight: 500;
+      }
+
+      button {
+        @include button($c: white, $bc: $primary-color);
+        padding: 7px 13px;
+      }
+    }
+
+    .products {
+      @include flex($justify: false);
+      position: relative;
+      transition: all 1s ease;
+    }
+    .icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .productRow {
+    display: none;
+  }
+  .mobile-product-row {
+    display: block;
+  }
+}

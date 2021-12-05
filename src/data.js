@@ -1,0 +1,920 @@
+export const navbarList = [
+  {
+    id: 1,
+    img: "assets/navbar-top-offer.png",
+    text: "Top Offers",
+    dropdown: false,
+  },
+  {
+    id: 2,
+    img: "assets/navbar-grocery.png",
+    text: "Grocery",
+    dropdown: false,
+  },
+  {
+    id: 3,
+    img: "assets/navbar-mobile.png",
+    text: "Mobiles",
+    dropdown: false,
+  },
+  {
+    id: 4,
+    img: "assets/navbar-fashion.png",
+    text: "Fashion",
+    dropdown: true,
+    top: 30,
+    right: -60,
+    arrowRight: 80,
+    options: [
+      {
+        id: 1,
+        text: "Men's Top Wear",
+        sidebar: true,
+      },
+      {
+        id: 2,
+        text: "Men's Bottom Wear",
+        sidebar: true,
+      },
+      {
+        id: 3,
+        text: "Women Etnic",
+        sidebar: true,
+      },
+      {
+        id: 4,
+        text: "Women Western",
+        sidebar: true,
+      },
+      {
+        id: 5,
+        text: "Men Footwear",
+        sidebar: true,
+      },
+      {
+        id: 6,
+        text: "Women Footwear",
+        sidebar: true,
+      },
+      {
+        id: 7,
+        text: "Watches and Accessories",
+        sidebar: true,
+      },
+      {
+        id: 8,
+        text: "Bags, Suitcases & Luggage",
+        sidebar: true,
+      },
+      {
+        id: 9,
+        text: "Kids",
+        sidebar: true,
+      },
+      {
+        id: 10,
+        text: "Essentials",
+        sidebar: true,
+      },
+      {
+        id: 11,
+        text: "Winter",
+        sidebar: true,
+      },
+    ],
+  },
+  {
+    id: 5,
+    img: "assets/navbar-electronic.png",
+    text: "Electronics",
+    dropdown: true,
+    top: 30,
+    right: -60,
+    arrowRight: 90,
+    options: [
+      {
+        id: 1,
+        text: "Audio",
+        sidebar: true,
+      },
+      {
+        id: 2,
+        text: "Electronics GST store",
+        sidebar: false,
+      },
+      {
+        id: 3,
+        text: "Cameras & Accessories",
+        sidebar: true,
+      },
+      {
+        id: 4,
+        text: "Computer Peripherals",
+        sidebar: true,
+      },
+      {
+        id: 5,
+        text: "Gaming",
+        sidebar: true,
+      },
+      {
+        id: 6,
+        text: "Health & Personal Care",
+        sidebar: true,
+      },
+      {
+        id: 7,
+        text: "Laptop Accessories",
+        sidebar: true,
+      },
+      {
+        id: 8,
+        text: "Laptop and Desktop",
+        sidebar: true,
+      },
+      {
+        id: 9,
+        text: "Mobile Accessory",
+        sidebar: true,
+      },
+      {
+        id: 10,
+        text: "Powerbank",
+        sidebar: true,
+      },
+      {
+        id: 11,
+        text: "Smart Home Automation",
+        sidebar: true,
+      },
+      {
+        id: 12,
+        text: "Smart Wearables",
+        sidebar: true,
+      },
+      {
+        id: 13,
+        text: "Storage",
+        sidebar: true,
+      },
+      {
+        id: 14,
+        text: "Tablets",
+        sidebar: true,
+      },
+    ],
+  },
+  {
+    id: 6,
+    img: "assets/navbar-home.jpg",
+    text: "Home",
+    dropdown: true,
+    top: 30,
+    right: -60,
+    arrowRight: 70,
+    options: [
+      {
+        id: 1,
+        text: "Home Furnishings",
+        sidebar: true,
+      },
+      {
+        id: 2,
+        text: "Living Room",
+        sidebar: true,
+      },
+      {
+        id: 3,
+        text: "Kitchen & Dining",
+        sidebar: true,
+      },
+      {
+        id: 4,
+        text: "Bedroom",
+        sidebar: true,
+      },
+      {
+        id: 5,
+        text: "Home Decor",
+        sidebar: true,
+      },
+      {
+        id: 6,
+        text: "Tools & Utility",
+        sidebar: true,
+      },
+      {
+        id: 7,
+        text: "Lightins & Electricals",
+        sidebar: true,
+      },
+      {
+        id: 8,
+        text: "Space Saving",
+        sidebar: true,
+      },
+      {
+        id: 9,
+        text: "Cleaning & Bath",
+        sidebar: true,
+      },
+      {
+        id: 10,
+        text: "Kids Furniture",
+        sidebar: true,
+      },
+      {
+        id: 11,
+        text: "Pet & Gardening",
+        sidebar: true,
+      },
+    ],
+  },
+  {
+    id: 7,
+    img: "assets/navbar-appliance.png",
+    text: "Appliances",
+    dropdown: true,
+    top: 30,
+    right: -30,
+    arrowRight: 50,
+    options: [
+      {
+        id: 1,
+        text: "Televisions",
+        sidebar: true,
+      },
+      {
+        id: 2,
+        text: "Washing Machines",
+        sidebar: true,
+      },
+      {
+        id: 3,
+        text: "Air Conditioners",
+        sidebar: true,
+      },
+      {
+        id: 4,
+        text: "Refrigerators",
+        sidebar: true,
+      },
+      {
+        id: 5,
+        text: "Kitchen Appliances",
+        sidebar: true,
+      },
+      {
+        id: 6,
+        text: "Home Appliances",
+        sidebar: true,
+      },
+      {
+        id: 7,
+        text: "Seasonal Appliances",
+        sidebar: true,
+      },
+      {
+        id: 8,
+        text: "Premium Appliances",
+        sidebar: true,
+      },
+      {
+        id: 9,
+        text: "Buying Guides",
+        sidebar: true,
+      },
+      {
+        id: 10,
+        text: "Flipkart Benefits",
+        sidebar: true,
+      },
+    ],
+  },
+  {
+    id: 8,
+    img: "assets/navbar-travel.png",
+    text: "Travel",
+    dropdown: false,
+  },
+  {
+    id: 9,
+    img: "assets/navbar-beauty.png",
+    text: "Beauty, Toys & More",
+    dropdown: true,
+    top: 30,
+    right: 20,
+    arrowRight: 20,
+    options: [
+      {
+        id: 1,
+        text: "Beauty & Personal Care",
+        sidebar: true,
+      },
+      {
+        id: 2,
+        text: "Men's Grooming",
+        sidebar: true,
+      },
+      {
+        id: 3,
+        text: "Food & Drinks",
+        sidebar: true,
+      },
+      {
+        id: 4,
+        text: "Nutrition & Health Care",
+        sidebar: true,
+      },
+      {
+        id: 5,
+        text: "Baby care",
+        sidebar: true,
+      },
+      {
+        id: 6,
+        text: "Toys & School Supplies",
+        sidebar: true,
+      },
+      {
+        id: 7,
+        text: "Sports & Fitness",
+        sidebar: true,
+      },
+      {
+        id: 8,
+        text: "Books & Music",
+        sidebar: true,
+      },
+      {
+        id: 9,
+        text: "Stationary & Office Supplies",
+        sidebar: true,
+      },
+      {
+        id: 10,
+        text: "Auto Accessories",
+        sidebar: true,
+      },
+      {
+        id: 11,
+        text: "Safety and Hygeine Essentials",
+        sidebar: true,
+      },
+    ],
+  },
+];
+
+export const navbarMobileList = [
+  {
+    id: 1,
+    img: "assets/navbar-all.jpg",
+  },
+  {
+    id: 2,
+    img: "assets/navbar-offer.jpg",
+  },
+  {
+    id: 3,
+    img: "assets/navbar-mobile.png",
+    text: "Mobiles",
+  },
+  {
+    id: 4,
+    img: "assets/navbar-fashion.png",
+    text: "Fashion",
+  },
+  {
+    id: 5,
+    img: "assets/navbar-electronic.png",
+    text: "Electronics",
+  },
+  {
+    id: 6,
+    img: "assets/navbar-home.jpg",
+    text: "Home",
+  },
+  {
+    id: 7,
+    img: "assets/navbar-beauty.jpg",
+    text: "Beauty",
+  },
+  {
+    id: 8,
+    img: "assets/navbar-sports.jpg",
+    text: "Sports",
+  },
+  {
+    id: 9,
+    img: "assets/navbar-beauty.png",
+    text: "Toys & Baby",
+  },
+  {
+    id: 10,
+    img: "assets/navbar-appliance.png",
+    text: "Appliances",
+  },
+  {
+    id: 11,
+    img: "assets/navbar-food.jpg",
+    text: "Food & More",
+  },
+  {
+    id: 12,
+    img: "assets/navbar-travel.png",
+    text: "Flight",
+  },
+  {
+    id: 13,
+    img: "assets/navbar-insurance.jpg",
+    text: "Insurance",
+  },
+  {
+    id: 14,
+    img: "assets/navbar-gift-card.jpg",
+    text: "Gift Cards",
+  },
+];
+
+export const sliderList = [
+  {
+    id: 1,
+    img: "assets/slider1.jpeg",
+  },
+  {
+    id: 2,
+    img: "assets/slider2.jpg",
+  },
+  {
+    id: 3,
+    img: "assets/slider3.jpg",
+  },
+  {
+    id: 4,
+    img: "assets/slider4.jpg",
+  },
+  {
+    id: 5,
+    img: "assets/slider5.jpeg",
+  },
+];
+
+export const dealsList = [
+  {
+    title: "Deals of the Day",
+    desc: [
+      {
+        id: 1,
+        img: "assets/deals1.jpeg",
+        name: "Deal",
+        off: "Min. 40% Off",
+        category: "New",
+      },
+      {
+        id: 2,
+        img: "assets/deals2.jpeg",
+        name: "Deal",
+        off: "Min. 40% Off",
+        category: "New",
+      },
+      {
+        id: 3,
+        img: "assets/deals3.jpeg",
+        name: "Deal",
+        off: "Min. 40% Off",
+        category: "New",
+      },
+      {
+        id: 4,
+        img: "assets/deals4.jpeg",
+        name: "Deal",
+        off: "Min. 40% Off",
+        category: "New",
+      },
+      {
+        id: 5,
+        img: "assets/deals5.jpeg",
+        name: "Deal",
+        off: "Min. 40% Off",
+        category: "New",
+      },
+      {
+        id: 6,
+        img: "assets/deals6.jpeg",
+        name: "Deal",
+        off: "Min. 40% Off",
+        category: "New",
+      },
+      {
+        id: 7,
+        img: "assets/deals7.jpeg",
+        name: "Deal",
+        off: "Min. 40% Off",
+        category: "New",
+      },
+      {
+        id: 8,
+        img: "assets/deals8.jpeg",
+        name: "Deal",
+        off: "Min. 40% Off",
+        category: "New",
+      },
+    ],
+  },
+];
+
+export const pantsList = [
+  {
+    title: "Pants",
+    desc: [
+      {
+        id: 1,
+        img: "assets/pants1.jpeg",
+        name: "Puma",
+        off: "Min. 20% Off",
+        category: "Pants formal",
+      },
+      {
+        id: 2,
+        img: "assets/pants2.jpeg",
+        name: "Puma",
+        off: "Min. 20% Off",
+        category: "Pants formal",
+      },
+      {
+        id: 3,
+        img: "assets/pants3.jpeg",
+        name: "Puma",
+        off: "Min. 20% Off",
+        category: "Pants formal",
+      },
+      {
+        id: 4,
+        img: "assets/pants4.jpeg",
+        name: "Puma",
+        off: "Min. 20% Off",
+        category: "Pants formal",
+      },
+      {
+        id: 5,
+        img: "assets/pants5.jpeg",
+        name: "Puma",
+        off: "Min. 20% Off",
+        category: "Pants formal",
+      },
+      {
+        id: 6,
+        img: "assets/pants6.jpeg",
+        name: "Puma",
+        off: "Min. 20% Off",
+        category: "Pants formal",
+      },
+      {
+        id: 7,
+        img: "assets/pants7.jpeg",
+        name: "Puma",
+        off: "Min. 20% Off",
+        category: "Pants formal",
+      },
+      {
+        id: 8,
+        img: "assets/pants8.jpeg",
+        name: "Puma",
+        off: "Min. 20% Off",
+        category: "Pants formal",
+      },
+      {
+        id: 9,
+        img: "assets/pants9.jpeg",
+        name: "Puma",
+        off: "Min. 20% Off",
+        category: "Pants formal",
+      },
+      {
+        id: 10,
+        img: "assets/pants10.jpeg",
+        name: "Puma",
+        off: "Min. 20% Off",
+        category: "Pants formal",
+      },
+      {
+        id: 11,
+        img: "assets/pants11.jpeg",
+        name: "Puma",
+        off: "Min. 20% Off",
+        category: "Pants formal",
+      },
+      {
+        id: 12,
+        img: "assets/pants12.jpeg",
+        name: "Puma",
+        off: "Min. 20% Off",
+        category: "Pants formal",
+      },
+      {
+        id: 13,
+        img: "assets/pants12.jpeg",
+        name: "Puma",
+        off: "Min. 20% Off",
+        category: "Pants formal",
+      },
+    ],
+  },
+];
+
+export const shoesList = [
+  {
+    title: "Shoes",
+    desc: [
+      {
+        id: 1,
+        img: "assets/shoes1.jpeg",
+        name: "Addidas",
+        off: "Min. 10% Off",
+        category: "Shoes Snikkers",
+      },
+      {
+        id: 2,
+        img: "assets/shoes2.jpeg",
+        name: "Addidas",
+        off: "Min. 10% Off",
+        category: "Shoes Snikkers",
+      },
+      {
+        id: 3,
+        img: "assets/shoes3.jpeg",
+        name: "Addidas",
+        off: "Min. 10% Off",
+        category: "Shoes Snikkers",
+      },
+      {
+        id: 4,
+        img: "assets/shoes4.jpeg",
+        name: "Addidas",
+        off: "Min. 10% Off",
+        category: "Shoes Snikkers",
+      },
+      {
+        id: 5,
+        img: "assets/shoes5.jpeg",
+        name: "Addidas",
+        off: "Min. 10% Off",
+        category: "Shoes Snikkers",
+      },
+      {
+        id: 6,
+        img: "assets/shoes6.jpeg",
+        name: "Addidas",
+        off: "Min. 10% Off",
+        category: "Shoes Snikkers",
+      },
+      {
+        id: 7,
+        img: "assets/shoes7.jpeg",
+        name: "Addidas",
+        off: "Min. 10% Off",
+        category: "Shoes Snikkers",
+      },
+      {
+        id: 8,
+        img: "assets/shoes8.jpeg",
+        name: "Addidas",
+        off: "Min. 10% Off",
+        category: "Shoes Snikkers",
+      },
+      {
+        id: 9,
+        img: "assets/shoes9.jpeg",
+        name: "Addidas",
+        off: "Min. 10% Off",
+        category: "Shoes Snikkers",
+      },
+      {
+        id: 10,
+        img: "assets/shoes10.jpeg",
+        name: "Addidas",
+        off: "Min. 10% Off",
+        category: "Shoes Snikkers",
+      },
+      {
+        id: 11,
+        img: "assets/shoes11.jpeg",
+        name: "Addidas",
+        off: "Min. 10% Off",
+        category: "Shoes Snikkers",
+      },
+      {
+        id: 12,
+        img: "assets/shoes12.jpeg",
+        name: "Addidas",
+        off: "Min. 10% Off",
+        category: "Shoes Snikkers",
+      },
+      {
+        id: 13,
+        img: "assets/shoes12.jpeg",
+        name: "Addidas",
+        off: "Min. 10% Off",
+        category: "Shoes Snikkers",
+      },
+    ],
+  },
+];
+
+export const tShirtList = [
+  {
+    title: "T-shirt",
+    desc: [
+      {
+        id: 1,
+        img: "assets/t-shirt1.jpeg",
+        name: "Peter England",
+        off: "Min. 50% Off",
+        category: "Shirts Coats",
+      },
+      {
+        id: 2,
+        img: "assets/t-shirt2.jpeg",
+        name: "Peter England",
+        off: "Min. 50% Off",
+        category: "Shirts Coats",
+      },
+      {
+        id: 3,
+        img: "assets/t-shirt3.jpeg",
+        name: "Peter England",
+        off: "Min. 50% Off",
+        category: "Shirts Coats",
+      },
+      {
+        id: 4,
+        img: "assets/t-shirt4.jpeg",
+        name: "Peter England",
+        off: "Min. 50% Off",
+        category: "Shirts Coats",
+      },
+      {
+        id: 5,
+        img: "assets/t-shirt5.jpeg",
+        name: "Peter England",
+        off: "Min. 50% Off",
+        category: "Shirts Coats",
+      },
+      {
+        id: 6,
+        img: "assets/t-shirt6.jpeg",
+        name: "Peter England",
+        off: "Min. 50% Off",
+        category: "Shirts Coats",
+      },
+      {
+        id: 7,
+        img: "assets/t-shirt7.jpeg",
+        name: "Peter England",
+        off: "Min. 50% Off",
+        category: "Shirts Coats",
+      },
+      {
+        id: 8,
+        img: "assets/t-shirt8.jpeg",
+        name: "Peter England",
+        off: "Min. 50% Off",
+        category: "Shirts Coats",
+      },
+      {
+        id: 9,
+        img: "assets/t-shirt9.jpeg",
+        name: "Peter England",
+        off: "Min. 50% Off",
+        category: "Shirts Coats",
+      },
+      {
+        id: 10,
+        img: "assets/t-shirt10.jpeg",
+        name: "Peter England",
+        off: "Min. 50% Off",
+        category: "Shirts Coats",
+      },
+      {
+        id: 11,
+        img: "assets/t-shirt11.jpeg",
+        name: "Peter England",
+        off: "Min. 50% Off",
+        category: "Shirts Coats",
+      },
+      {
+        id: 12,
+        img: "assets/t-shirt.12jpeg",
+        name: "Peter England",
+        off: "Min. 50% Off",
+        category: "Shirts Coats",
+      },
+      {
+        id: 13,
+        img: "assets/t-shirt.12jpeg",
+        name: "Peter England",
+        off: "Min. 50% Off",
+        category: "Shirts Coats",
+      },
+    ],
+  },
+];
+
+export const watchList = [
+  {
+    title: "Watches",
+    desc: [
+      {
+        id: 1,
+        img: "assets/watch1.jpeg",
+        name: "Titan",
+        off: "Min. 25% Off",
+        category: "SmartWatch Fastrack",
+      },
+      {
+        id: 2,
+        img: "assets/watch2.jpeg",
+        name: "Titan",
+        off: "Min. 25% Off",
+        category: "SmartWatch Fastrack",
+      },
+      {
+        id: 3,
+        img: "assets/watch3.jpeg",
+        name: "Titan",
+        off: "Min. 25% Off",
+        category: "SmartWatch Fastrack",
+      },
+      {
+        id: 4,
+        img: "assets/watch4.jpeg",
+        name: "Titan",
+        off: "Min. 25% Off",
+        category: "SmartWatch Fastrack",
+      },
+      {
+        id: 5,
+        img: "assets/watch5.jpeg",
+        name: "Titan",
+        off: "Min. 25% Off",
+        category: "SmartWatch Fastrack",
+      },
+      {
+        id: 6,
+        img: "assets/watch6.jpeg",
+        name: "Titan",
+        off: "Min. 25% Off",
+        category: "SmartWatch Fastrack",
+      },
+      {
+        id: 7,
+        img: "assets/watch7.jpeg",
+        name: "Titan",
+        off: "Min. 25% Off",
+        category: "SmartWatch Fastrack",
+      },
+      {
+        id: 8,
+        img: "assets/watch8.jpeg",
+        name: "Titan",
+        off: "Min. 25% Off",
+        category: "SmartWatch Fastrack",
+      },
+      {
+        id: 9,
+        img: "assets/watch9.jpeg",
+        name: "Titan",
+        off: "Min. 25% Off",
+        category: "SmartWatch Fastrack",
+      },
+      {
+        id: 10,
+        img: "assets/watch10.jpeg",
+        name: "Titan",
+        off: "Min. 25% Off",
+        category: "SmartWatch Fastrack",
+      },
+      {
+        id: 11,
+        img: "assets/watch11.jpeg",
+        name: "Titan",
+        off: "Min. 25% Off",
+        category: "SmartWatch Fastrack",
+      },
+      {
+        id: 12,
+        img: "assets/watch12.jpeg",
+        name: "Titan",
+        off: "Min. 25% Off",
+        category: "SmartWatch Fastrack",
+      },
+      {
+        id: 13,
+        img: "assets/watch12.jpeg",
+        name: "Titan",
+        off: "Min. 25% Off",
+        category: "SmartWatch Fastrack",
+      },
+    ],
+  },
+];

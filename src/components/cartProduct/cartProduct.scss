@@ -1,0 +1,121 @@
+@import "../../App.scss";
+
+.cart-product {
+  padding: 20px 20px;
+  background-color: white;
+  @include border-shadow($darkPer: -5px);
+
+  .wrapper {
+    @include flex($align: false);
+    justify-content: space-between;
+    gap: 10px;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      white-space: nowrap;
+
+      .text {
+        font-size: $font-size1;
+      }
+      .grey {
+        color: $grey-color;
+        font-size: $font-size1;
+        margin: 10px 0;
+      }
+
+      .name {
+        font-size: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .seller-wrapper {
+        @include flex($justify: false);
+        gap: 5px;
+
+        .text {
+          font-size: $font-size2;
+        }
+
+        img {
+          width: 50px;
+        }
+      }
+
+      .price-wrapper {
+        margin-bottom: 10px;
+        .discounted-price {
+          font-size: 20px;
+        }
+
+        .price {
+          text-decoration: line-through;
+          color: $grey-color;
+          font-size: $font-size1;
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+
+        .off {
+          color: $green-color;
+        }
+      }
+
+      .delivery-wrapper {
+        .text {
+          margin-right: 5px;
+          font-size: $font-size2;
+        }
+
+        .charges {
+          .price {
+            color: $grey-color;
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+
+    .right {
+      @include flex;
+      flex-direction: column;
+      img {
+        width: 60px;
+      }
+
+      .quantity-container {
+        margin: 15px 0;
+        @include flex;
+
+        .text {
+          font-size: $font-size1 + 2;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .btns {
+    @include flex;
+    margin-top: 15px;
+    * {
+      @include button($bc: white, $c: black);
+      padding: 15px 10px;
+      @include border-shadow($darkPer: -6px);
+      flex: 1;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .cart-product {
+    margin: 0 0;
+    border: 1px solid $border-color;
+
+    .btns {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import "../../App.scss";
+
+.all-products {
+  .navbar {
+    display: none;
+  }
+  .below-navbar {
+    @include flex($justify: false);
+
+    .container {
+      background-color: #fff;
+      @include flex;
+      flex: 1;
+      padding: 15px 30px;
+      cursor: pointer;
+      @include border-shadow($darkPer: -6px);
+
+      .text {
+        font-size: $font-size1;
+        margin-left: 10px;
+      }
+    }
+
+    .sort-container {
+      border-right: 1px solid $grey-color;
+    }
+  }
+  .wrapper {
+    display: flex;
+  }
+  .filters {
+    display: none;
+    flex: 25%;
+    height: 100%;
+    margin: 10px 10px;
+    padding: 10px 15px;
+    background-color: #fff;
+    @include border-shadow($darkPer: -5px);
+  }
+  .products {
+    flex: 75%;
+    height: 100%;
+    margin: 10px 10px;
+    width: 100%;
+    @include flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #fff;
+    @include border-shadow($darkPer: -5px);
+  }
+}
+
+@media (min-width: 700px) {
+  .all-products {
+    .navbar {
+      display: block;
+    }
+    .products {
+      width: 75%;
+      margin-left: 0;
+    }
+    .filters {
+      display: flex;
+      flex-direction: column;
+      * {
+        padding: 6px 0px;
+      }
+
+      .title-container {
+        font-size: $title--font-size;
+
+        padding: 15px 0px;
+      }
+      .cat-container {
+        @include flex($justify: false);
+      }
+      .price-container {
+        .text {
+          font-size: $font-size1;
+        }
+
+        .select-wrapper {
+          @include flex;
+          justify-content: space-between;
+
+          select {
+            width: 80px;
+            font-size: $font-size1;
+            border: 1px solid $grey-color;
+          }
+        }
+      }
+      .assured-container {
+        @include flex($justify: false);
+        gap: 10px;
+
+        img {
+          width: 70px;
+        }
+      }
+    }
+    .below-navbar {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../App.scss";
+
+@media (max-width: 500px) {
+  .mobile-product-row {
+    background-color: rgb(182, 228, 211);
+    margin: 40px 0;
+    padding: 0 15px;
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      background: url("http://localhost:3000/assets/mobile3.jpg") no-repeat
+        center bottom/cover;
+      width: 100%;
+      height: 60px;
+      padding: 20px 0px;
+
+      .container {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-size: $title--font-size;
+          font-weight: 500;
+        }
+      }
+      button {
+        @include button($c: white, $bc: $primary-color);
+        padding: 8px 10px;
+      }
+    }
+
+    .products {
+      background-color: #fff;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      top: 10px;
+      @include border-shadow($darkPer: -5px);
+    }
+  }
+}

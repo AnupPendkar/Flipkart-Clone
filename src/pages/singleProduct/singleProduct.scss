@@ -1,0 +1,182 @@
+@import "../../App.scss";
+$color: rgb(55, 190, 95);
+$orange-color: rgb(255, 181, 0);
+
+.single-product {
+  overflow: hidden;
+  .wrapper {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    .img-container {
+      @include flex($justify: false);
+      transition: transform 0.2s ease-in-out;
+
+      .main-img {
+        min-width: 100%;
+        object-fit: contain;
+        height: 300px;
+      }
+    }
+
+    .img-group {
+      padding: 0 10px;
+      @include flex($justify: false);
+      margin: 30px 0;
+    }
+
+    .desc {
+      padding: 0 10px;
+      .text {
+        font-size: $font-size1;
+      }
+      .title {
+        font-size: 19px;
+        font-weight: 500;
+      }
+      .rating-container {
+        margin: 10px 0;
+        @include flex($justify: false);
+        gap: 10px;
+
+        .star-container {
+          background-color: $color;
+          padding: 3px 8px;
+          border-radius: 50px;
+          color: white;
+
+          .rating {
+            margin-right: 5px;
+          }
+        }
+      }
+      .price-container {
+        @include flex($justify: false);
+        gap: 10px;
+
+        .dis-price {
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        .price {
+          color: $grey-color;
+          font-size: $font-size1;
+          text-decoration: line-through;
+        }
+
+        .off {
+          color: $green-color;
+          font-size: $font-size1;
+        }
+      }
+    }
+  }
+  .pincode-container {
+    margin: 10px 0;
+  }
+  .view-details-container {
+    @include flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    font-size: $font-size1;
+    background-color: white;
+    margin-bottom: 10px;
+  }
+
+  .rating-review-container {
+    padding: 15px 20px;
+    background-color: white;
+
+    .top {
+      @include flex;
+      justify-content: space-between;
+      padding: 10px 0px;
+      border-bottom: 1px solid $border-color;
+
+      button {
+        @include button($c: $primary-color, $bc: white);
+        padding: 8px 15px;
+        @include border-shadow($darkPer: -2px);
+      }
+    }
+
+    .bottom {
+      @include flex;
+      justify-content: space-between;
+      margin-top: 25px;
+
+      .left {
+        flex: 40%;
+        @include flex;
+        flex-direction: column;
+        text-align: center;
+
+        .rating {
+          font-size: 27px;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+
+        .reviews {
+          font-size: $font-size2;
+          color: $grey-color;
+        }
+      }
+
+      .right {
+        flex: 60%;
+
+        .rating-container {
+          @include flex;
+          gap: 15px;
+          margin-bottom: 5px;
+
+          .rating {
+            font-size: $font-size2;
+          }
+
+          .slides {
+            width: 80px;
+            height: 3px;
+          }
+          .slide1 {
+            width: 58.1%;
+            height: 100%;
+            background-color: $color;
+          }
+          .slide2 {
+            width: 25.2%;
+            height: 100%;
+            background-color: $color;
+          }
+          .slide3 {
+            width: 7.84%;
+            height: 100%;
+            background-color: $color;
+          }
+          .slide4 {
+            width: 2.97%;
+            height: 100%;
+            background-color: $orange-color;
+          }
+          .slide5 {
+            width: 5.82%;
+            height: 100%;
+            background-color: tomato;
+          }
+
+          .text {
+            font-size: $font-size2;
+            color: $grey-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+}

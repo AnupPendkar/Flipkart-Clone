@@ -1,0 +1,28 @@
+@import "../../App.scss";
+
+.pincode-container {
+  @include flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+  background-color: white;
+  @include border-shadow($darkPer: -5px);
+
+  .left {
+    @include flex($justify: false);
+    gap: 10px;
+
+    img {
+      width: 20px;
+    }
+    .text {
+      font-size: $font-size1 + 2;
+    }
+  }
+  .right {
+    button {
+      @include button($bc: white, $c: $primary-color);
+      @include border-shadow($darkPer: -2px);
+      padding: 8px 20px;
+    }
+  }
+}

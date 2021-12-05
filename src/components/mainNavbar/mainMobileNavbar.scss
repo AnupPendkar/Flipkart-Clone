@@ -1,0 +1,140 @@
+@import "../../App.scss";
+
+.main-mobile-navbar {
+  @include flex($align: false);
+  flex-direction: column;
+  background-color: $primary-color;
+  color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding-top: 8px;
+  z-index: 20;
+  position: relative;
+
+  .row1 {
+    @include flex($justify: false);
+    padding: 0 1rem;
+
+    .ham {
+      width: 25px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    .logo {
+      width: 75px;
+      cursor: pointer;
+    }
+
+    .c {
+      margin-left: auto;
+      .cart {
+        width: 20px;
+        margin-right: 25px;
+        cursor: pointer;
+      }
+    }
+
+    .text {
+      font-size: $font-size1;
+      cursor: pointer;
+    }
+  }
+
+  .row2 {
+    @include flex;
+    position: relative;
+    margin-top: 10px;
+
+    input {
+      width: 78%;
+      padding: 8px 10px;
+      padding-left: 35px;
+      border-radius: 5px;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      width: 20px;
+      left: 7%;
+      color: $primary-color;
+      transform: translateY(-50%);
+    }
+  }
+
+  @keyframes animation {
+    0% {
+      opacity: 0;
+      width: 0;
+    }
+    50% {
+      opacity: 0;
+      width: 35%;
+    }
+    100% {
+      width: 70%;
+      opacity: 1;
+    }
+  }
+
+  .ham-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    @include flex($align: false);
+    flex-direction: column;
+    color: white;
+    width: 0;
+    opacity: 0;
+
+    .topbar {
+      padding: 12px 10px;
+      padding-right: 20px;
+      @include flex($justify: false);
+      background-color: $primary-color;
+
+      .icon {
+        width: 30px;
+        margin-right: 20px;
+      }
+
+      .text {
+        font-size: 16px;
+      }
+
+      img {
+        margin-left: auto;
+        width: 25px;
+      }
+    }
+
+    .item-container {
+      @include flex($align: false);
+      padding: 10px 15px;
+      flex-direction: column;
+    }
+  }
+  .active {
+    display: flex;
+    width: 70%;
+    z-index: 100;
+    opacity: 1;
+    animation: animation 1s ease-in-out both;
+  }
+}
+
+@media (min-width: 700px) {
+  .main-mobile-navbar {
+    display: none;
+  }
+}

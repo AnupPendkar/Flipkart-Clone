@@ -1,0 +1,109 @@
+@import "../../App.scss";
+
+.register {
+  .container {
+    margin: 10px 30px;
+    @include flex;
+    flex-direction: column;
+
+    .top {
+      @include flex;
+      justify-content: space-around;
+      gap: 20px;
+      padding: 20px 30px;
+      background-color: $primary-color;
+
+      .section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: white;
+
+        .text {
+          font-weight: 500;
+          font-size: 18px;
+        }
+
+        .desc {
+          font-size: $font-size1;
+        }
+      }
+
+      img {
+        width: 120px;
+      }
+    }
+
+    .bottom {
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+
+      input {
+        padding: 12px 15px;
+        font-size: $font-size1;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid $grey-color;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .privacy {
+        font-size: $font-size2;
+        color: $grey-color;
+        margin-bottom: 10px;
+      }
+
+      button {
+        margin: 10px 0;
+        @include button($bc: white, $c: $primary-color);
+        padding: 12px 15px;
+        cursor: pointer;
+        border: none;
+        @include border-shadow($darkPer: -2px);
+      }
+
+      .register {
+        @include button($bc: rgb(251, 100, 27), $c: white);
+      }
+
+      .login {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .register {
+    .container {
+      margin-top: 30px;
+      flex-direction: row;
+
+      .top {
+        flex-direction: column;
+        height: 300px;
+
+        .section {
+          .desc {
+            font-size: 15px;
+            width: 80%;
+          }
+        }
+
+        img {
+          width: 220px;
+        }
+      }
+
+      .bottom {
+        justify-content: center;
+        height: 300px;
+      }
+    }
+  }
+}
